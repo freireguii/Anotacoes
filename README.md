@@ -21,3 +21,19 @@ Geralmente quem disponibiliza o provedor de acesso são as empresas de telefonia
 O dns transforma o domínio em IP. E para se descobrir o IP de um domínio é necessário abrir o terminal e digital "ping + domínio do site".
 
 OBS: existem domínios que não retornam com o IP, testei em alguns e não deu.
+
+________
+
+TCP (Transmission Control Protol)/IP (Internet Protocol)
+
+O TCP/IP utiliza 4 camadas e cada camada é responsável por um grupo de tarefas, vide:
+-1ª camada é a física (ex: uma placa de rede)
+-2ªcamada é a de rede (ex: é o próprio protocolo de internet)
+-3ª camada é a de transporte (ex: é o próprio TCP e o UDP)
+-4ª camada é a de aplicação (ex: é a FTP, SMTP e a HTTP)
+
+# Diferença entre o TCP e o UDP:
+
+-O UDP não estabelece conexão, pois não realiza o famoso "HANDSHAKE" entre as máquinas, ele não precisa de nenhum tipo de confirmação de entrega; ele apenas envia os pacotes de dados, não se importando com quem irá receber, nem mesmo se houve de fato o recebimento. Dessa forma, o UDP (USER DATAGRAM PROTOCOL) utiliza bem menos largura de banda do que o TCP.
+
+-O TCP (TRANSMISSION CONTROL PROTOCOL) estabelece uma conexão entre as máquinas, ele realiza o "HANDSHAKE', por isso é voltado para a realização de uma conexão de fato, há também a confirmação de entrega dos dados enviados, há uma busca pela integridade dos dados.
